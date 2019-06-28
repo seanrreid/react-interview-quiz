@@ -1,6 +1,6 @@
 # React JS Quiz
 
-1. What is React? How is it different from other JS frameworks?
+1. What is React?
 
 <details>
 <summary><b>Answer</b></summary>
