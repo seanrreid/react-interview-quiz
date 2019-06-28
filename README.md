@@ -30,7 +30,7 @@ _Note:_ There are likely _many_ answers to this question. Most will depend on ex
 
 --- 
 
-3. What can you tell me about JSX?
+3. What is JSX?
 
 <details>
 <summary><b>Answer</b></summary>
