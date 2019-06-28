@@ -52,11 +52,13 @@ JSX, aka 'JavaScript eXtension' is XML like syntax developed for use in React. I
 <details>
 <summary><b>Answer</b></summary>
 <p>
+
 >In a React component, props are variables passed to it by its parent component. State on the other hand is still variables, but directly initialized and managed by the component.
 >
 > The state can be initialized by props.
 
 More Reading: [https://flaviocopes.com/react-state-vs-props/](https://flaviocopes.com/react-state-vs-props/)
+
 </p>
 </details>
 
@@ -67,7 +69,9 @@ More Reading: [https://flaviocopes.com/react-state-vs-props/](https://flaviocope
 <details>
 <summary><b>Answer</b></summary>
 <p>
+
 A stateless, aka functional, component is _just_ a Javascript function that can receive props and return a React element.
+
 </p>
 
 ```
@@ -79,6 +83,7 @@ const myGreetingComponent = props => {
     )
 }
 ```
+
 </details>
 
 --- 
@@ -100,9 +105,11 @@ More Reading: [https://itnext.io/react-component-class-vs-stateless-component-e3
 <details>
 <summary<b>Answer</b></summary>
 <p> 
+
 The render method returns a description of what you want to see on the screen. React takes the description and displays the result. 
 
 In particular, render returns a React element, which is a lightweight description of what to render.
+
 </p>
 </details>
 
@@ -113,7 +120,9 @@ In particular, render returns a React element, which is a lightweight descriptio
 <details>
 <summary><b>Answer</b></summary>
 <p>
+
 Keys are what help React keep track of what items have changed, been added, or been removed from a list.
+
 </p>
 </details>
 
@@ -124,6 +133,7 @@ Keys are what help React keep track of what items have changed, been added, or b
 <details>
 <summary><b>Answer</b></summary>
 <p>
+
 The first thing React will do when setState is called is merge the object you passed into setState into the current state of the component. 
 
 This will kick off a process called reconciliation. The end goal of reconciliation is to, in the most efficient way possible, update the UI based on this new state. 
@@ -131,6 +141,7 @@ This will kick off a process called reconciliation. The end goal of reconciliati
 To do this, React will construct a new tree of React elements (which you can think of as an object representation of your UI). Once it has this tree, in order to figure out how the UI should change in response to the new state, React will diff (`diff`: check the differences of) this new tree against the previous element tree. 
 
 By doing this, React will then know the exact changes which occurred, and by knowing exactly what changes occurred, will able to minimize its footprint on the UI by only making updates where absolutely necessary.
+
 </p>
 </details>
 
@@ -155,6 +166,7 @@ Common React data flow patterns are:
 * Between siblings (messy, but possible). 
 
 More Reading: [https://medium.com/@lizdenhup/understanding-unidirectional-data-flow-in-react-3e3524c09d8e](https://medium.com/@lizdenhup/understanding-unidirectional-data-flow-in-react-3e3524c09d8e)
+
 </p>
 </details>
 
@@ -171,6 +183,7 @@ Per the [docs](https://facebook.github.io/create-react-app/docs/getting-started)
 > Create React App is an officially supported way to create single-page React applications. It offers a modern build setup with no configuration.
 
 Using `create-react-app` will quickly scaffold out a React application with all the basic libraries, folder structure, and scripts that you need to get a React application up and running quickly.
+
 </p>
 </details>
 
@@ -183,9 +196,11 @@ Using `create-react-app` will quickly scaffold out a React application with all 
 <details>
 <summary><b>Answer</b></summary>
 <p>
+
 Refs allow direct access to a DOM element or an instance of a component. 
 
 In order to use them you add a ref attribute to your component whose value is a callback function which will receive the underlying DOM element or the mounted instance of the component as its first argument.
+
 </p>
 </details>
 
@@ -196,9 +211,11 @@ In order to use them you add a ref attribute to your component whose value is a 
 <details>
 <summary><b>Answer</b></summary>
 <p>
+
 A React _element_ describes what you want to see on the screen. It is an object representation of some UI.
 
 A React _component_ is a function or a class which optionally accepts input and returns a React element (typically via JSX which gets transpiled to a createElement invocation).
+
 </p>
 </details>
 
@@ -209,6 +226,7 @@ A React _component_ is a function or a class which optionally accepts input and 
 <details>
 <summary><b>Answer</b></summary>
 <p>
+
 High-Level Component Lifecycle
 
 At the highest level, React components have lifecycle events that fall into three general categories:
@@ -220,6 +238,7 @@ At the highest level, React components have lifecycle events that fall into thre
 Every React component defines these events as a mechanism for managing its properties, state, and rendered output. Some of these events only happen once, others happen more frequently; understanding these three general categories should help you clearly visualize when certain logic needs to be applied.
 
 For example, a component may need to add event listeners to the DOM when it first mounts. However, it should probably remove those event listeners when the component unmounts from the DOM so that irrelevant processing does not occur.
+
 </p>
 
 `componentDidMount()`
@@ -232,6 +251,18 @@ For example, a component may need to add event listeners to the DOM when it firs
 
 4. What is a higher order component in React?
 
+<details>
+<summary><b>Answer</b></summary>
+<p>
+
+> A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React’s compositional nature.
+> 
+> Concretely, a higher-order component is a function that takes a component and returns a new component.
+
+React Docs: [https://reactjs.org/docs/higher-order-components.html](https://reactjs.org/docs/higher-order-components.html)
+
+</p>
+</details>
 
 ---
 
@@ -248,10 +279,12 @@ this.setState((prevState, props) => {
 <details>
 <summary><b>Answer</b></summary>
 <p>
+
 Nothing is wrong with it 🙂. 
 
 It’s rarely used and not well known, but you can also pass a function to `setState` that receives the previous state and props and returns a new state, just as we’re doing above. 
 
 This is actually recommended if you’re setting state based on previous state.
+
 </p>
 </details>
