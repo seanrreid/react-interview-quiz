@@ -98,7 +98,7 @@ More Reading: [https://itnext.io/react-component-class-vs-stateless-component-e3
 7. What is the purpose of the render function?
 
 <details>
-<summary<b>Answer<b></summary>
+<summary<b>Answer</b></summary>
 <p> 
 The render method returns a description of what you want to see on the screen. React takes the description and displays the result. 
 
