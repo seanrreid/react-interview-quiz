@@ -282,11 +282,11 @@ this.setState((prevState, props) => {
 <summary><b>Answer</b></summary>
 <p>
 
-Nothing is wrong with it 🙂. 
+"Nothing is wrong with it 🙂. 
 
 It’s rarely used and not well known, but you can also pass a function to `setState` that receives the previous state and props and returns a new state, just as we’re doing above. 
 
-This is actually recommended if you’re setting state based on previous state.
+This is actually recommended if you’re setting state based on previous state." - Tyler McGinnis
 
 </p>
 </details>
