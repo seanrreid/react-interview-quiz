@@ -37,7 +37,7 @@ _Note:_ There are likely _many_ answers to this question. Most will depend on ex
 <details>
 <summary><b>Answer</b></summary>
 <p>
-JSX, aka 'JavaScript eXtension' is XML like syntax developed for use in React. It allows developers to write Javascript that _looks_ like HTML. JSX code by itself cannot be read by the browser; it must be transpiled into traditional JavaScript using tools like Babel and webpack. 
+JSX, aka 'JavaScript eXtension' is XML like syntax developed for use in React. It allows developers to write Javascript that <em>looks</em> like HTML. JSX code by itself cannot be read by the browser; it must be transpiled into traditional JavaScript using tools like Babel and webpack. 
 </p>
 
 #### Key Talking Points
